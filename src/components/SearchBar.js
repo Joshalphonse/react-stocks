@@ -3,9 +3,6 @@ import React, { Fragment } from 'react';
 const SearchBar = () => {
   return (
     <Fragment>
-      <strong>Search for Stocks!</strong>
-      <input type="text" onChange={null}/>
-      <br/>
 
       <strong>Sort by:</strong>
       <label>
