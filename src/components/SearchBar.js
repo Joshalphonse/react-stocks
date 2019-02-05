@@ -4,7 +4,6 @@ const SearchBar = (props) => {
   return (
     <Fragment>
       <strong>Search for Stocks!</strong>
-      <input type="text" onChange={props.handleInput} value={props.filterTerm}/>
       <br/>
 
       <strong>Sort by:</strong>

@@ -31,10 +31,6 @@ class MainContainer extends Component {
     // })
   }
 
-  handleInput = (event) => {
-    this.setState({filterTerm: event.target.value.toLowerCase()})
-  }
-
   handleRadio= (event) => {
     this.setState({sortBy: event.target.value})
   }
@@ -46,9 +42,6 @@ class MainContainer extends Component {
   chooseStocks = () => {
     let tempStocks = [...this.state.stocks]
     //filtering first by name and/or ticker
-    if(this.state.filterTerm){
-      tempStocks = this.state.stocks.filter(stock => stock.name.toLowerCase().includes(this.state.filterTerm) || stock.ticker.toLowerCase().includes(this.state.filterTerm))
-    }
 
     if(this.state.selectSort === "All"){
       tempStocks = [...this.state.stocks]
