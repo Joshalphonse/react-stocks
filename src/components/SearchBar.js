@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const SearchBar = () => {
   return (
-    <Fragment>
+    <div>
 
       <strong>Sort by:</strong>
       <label>
@@ -25,7 +25,7 @@ const SearchBar = () => {
       </label>
 
 
-    </Fragment>
+    </div>
   );
 }
 

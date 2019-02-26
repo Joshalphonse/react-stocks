@@ -1,17 +1,16 @@
-import React, { Fragment } from 'react';
-import PortfolioStock from '../components/PortfolioStock'
+import React, { Component } from 'react';
+import Stock from '../components/Stock'
+
 class PortfolioContainer extends Component {
 
   render() {
     return (
-      <Fragment>
-        <ul className="list-group">
-          <h2>My Portfolio</h2>
+      <div>
+        <h2>My Portfolio</h2>
           {
             //render your portfolio stocks here
           }
-        </ul>
-      </Fragment>
+      </div>
     );
   }
 

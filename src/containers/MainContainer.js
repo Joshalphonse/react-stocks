@@ -1,21 +1,13 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import StockContainer from './StockContainer'
 import PortfolioContainer from './PortfolioContainer'
 import SearchBar from '../components/SearchBar'
 
 class MainContainer extends Component {
 
-  handleRadio(){
-
-  }
-
-  handleSelect(){
-
-  }
-
   render() {
     return (
-      <Fragment>
+      <div>
         <SearchBar/>
 
           <div className="row">
@@ -30,7 +22,7 @@ class MainContainer extends Component {
 
             </div>
           </div>
-      </Fragment>
+      </div>
     );
   }
 
