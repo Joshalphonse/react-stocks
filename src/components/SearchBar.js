@@ -1,31 +1,20 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({changeHandler, value}) => {
   return (
-    <div>
-
-      <strong>Sort by:</strong>
-      <label>
-        <input type="radio" value="Alphabetically" checked={null} onChange={null}/>
-        Alphabetically
-      </label>
-      <label>
-        <input type="radio" value="Price" checked={null} onChange={null}/>
-        Price
-      </label>
+    <Fragment>
+      <strong>Search for Strains!</strong>
       <br/>
 
       <label>
-        <strong>Filter:</strong>
-        <select onChange={null}>
-          <option value="Tech">Tech</option>
-          <option value="Sportswear">Sportswear</option>
-          <option value="Finance">Finance</option>
-        </select>
+        <input type="text"
+        placeholder="Search Strains!"
+        value={value}
+        onChange={changeHandler}/>
+
       </label>
 
-
-    </div>
+    </Fragment>
   );
 }
 
